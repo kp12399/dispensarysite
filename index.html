@@ -3,107 +3,66 @@
   <head>
     <meta charset="utf-8">
     <title>Herbal Recovery</title>
-    <meta name="description" content="A short description">
-    <meta name="author" content="Your Name">
+    <meta name="description" content="Ontario Licensed Medical Cannabis Provider">
+    <meta name="author" content="Kiran Patel">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- <link rel="stylesheet" href="css/reset.css"> -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png"/>
   </head>
   <body>
 
     <header>
       <!-- Site logo, replace with your own -->
-      <div>
-        <a href="index.html"><img src="img/logo.png" alt="HR Logo"></a>
+      <div class="logo">
+        <img src="img/logo.png" alt="HR Logo">
       </div>
 
       <!-- Navigation menu and toggle button (non-functional) -->
-      <nav>
+
+      <nav class = "topbar">
         <button type="button">
-          <i class="material-icons">menu</i>
+          <i class="material-icons">dehaze</i>
         </button>
-        <ul>
-          <li><a href="#">Flower</a>
-            <ul>
+        <ul class = "menu">
               <li><a href="#">Sativa</a></li>
               <li><a href="#">Indica</a></li>
               <li><a href="#">Hybrid</a></li>
-            </ul>
-          </li>
-          <li><a href="#">Oils / Distillite</a></li>
-          <li><a href="#">Vaping</a></li>
-          <li><a href="#">Edibles</a></li>
         </ul>
+
+        <!-- Search for a product (non-functional) -->
+        <form>
+          <fieldset>
+            <label for="search">Search</label>
+            <input type="text" name="search" id="search">
+          </fieldset>
+        </form>
       </nav>
 
-      <!-- Search for a product (non-functional) -->
-      <form>
-        <fieldset>
-          <label for="search">Search</label>
-          <input type="text" name="search" id="search">
-        </fieldset>
-        <button type="button"><i class="material-icons">search</i></button>
-      </form>
 
-      <!-- Additional nav links -->
-      <ul>
-        <li><a href="#"><i class="material-icons">favorite_border</i></a></li>
-        <li><a href="#"><i class="material-icons">shopping_cart</i></a></li>
-      </ul>
+
+
     </header>
 
     <main>
       <header>
-        <h1>Sale: Category Name</h1>
+        <h1>top sellers</h1>
+        <h4>Sort By</h4>
 
         <!-- Filtering product form -->
         <form>
-          <h2>Filters</h2>
           <fieldset>
-            <h3>Sort By</h3>
-            <select name="sort" id="sort">
-              <option value="price-high">Price, highest to lowest</option>
-              <option value="price-low">Price, lowest to highest</option>
-              <option value="newest">Newest releases</option>
+
+            <select class = "dropdown" name="sort" id="sort">
+              <option value="price-high">Price: highest to lowest</option>
+              <option value="price-low">Price: lowest to highest</option>
+              <option value="newest">New Strains</option>
             </select>
-          </fieldset>
-
-
-          <fieldset>
-            <h3>Rating above</h3>
-            <ol>
-              <li>
-                <input type="radio" name="rating" value="4" id="above-4">
-                <label for="above-4">
-                  <i class="material-icons">star</i><i class="material-icons">star</i><i class="material-icons">star</i><i class="material-icons">star</i><i class="material-icons">star_border</i>
-                </label>
-              </li>
-              <li>
-                <input type="radio" name="rating" value="3" id="above-3">
-                <label for="above-3">
-                  <i class="material-icons">star</i><i class="material-icons">star</i><i class="material-icons">star</i><i class="material-icons">star_border</i><i class="material-icons">star_border</i>
-                </label>
-              </li>
-              <li>
-                <input type="radio" name="rating" value="2" id="above-2">
-                <label for="above-2">
-                  <i class="material-icons">star</i><i class="material-icons">star</i><i class="material-icons">star_border</i><i class="material-icons">star_border</i><i class="material-icons">star_border</i>
-                </label>
-              </li>
-              <li>
-                <input type="radio" name="rating" value="1" id="above-1">
-                <label for="above-1">
-                  <i class="material-icons">star</i><i class="material-icons">star_border</i><i class="material-icons">star_border</i><i class="material-icons">star_border</i><i class="material-icons">star_border</i>
-                </label>
-              </li>
-            </ol>
           </fieldset>
         </form>
       </header>
 
-
-        <h2>Result</h2>
 
 
         <ul class= "products">
@@ -113,20 +72,21 @@
           <article>
           <div><img class = "photo" src="img/GSC.jpeg" alt="Product Image"></div>
           <h3>girl scout cookies</h3>
+          <dd><span><i class="material-icons">star</i><i class="material-icons">star</i><i class="material-icons">star</i><i class="material-icons">star</i><i class="material-icons">star_half</i></span></dd>
           <p>This classic strain is a sativa dominant hybrid, a cross between Durban Poison and OG Kush. Recommended for patients suffering from severe pain, nausea, or appetite loss. </p>
           <dl>
 
             <dt>Weight Options (Grams)</dt>
             <dd><span>1</span>  •  <span>3.5</span>  •  <span>7</span>  •  <span>14</span>  •  <span>28</span></dd>
 
-            <dt>Rating</dt>
-            <dd>4.4 <span><i class="material-icons">star</i><i class="material-icons">star</i><i class="material-icons">star</i><i class="material-icons">star</i><i class="material-icons">star_half</i></span></dd>
+
+
           </dl>
           <div>
-            <span><del>$50.00</del> <ins>$39.00</ins></span>
-            <button type="button"><i class="material-icons">favorite</i></button>
+            <span class = "price"><del>$16.00/g</del> <ins>$13.99/g</ins></span>
+
           </div>
-          <div><a href="#">see more</a></div>
+          <div class = "btn"><a href="#">See More</a></div>
         </article>
         </li>
 
@@ -135,20 +95,17 @@
         <article>
           <div><img class = "photo" src="img/lovepotion.jpeg" alt="Product Image"></div>
           <h3>love potion</h3>
-          <p>Love Potion is a heavy sativa strain that is great for patients with depression, pain, and fatigue, due to its euphoric uplifting effects. </p>
+          <dd><span><i class="material-icons">star</i><i class="material-icons">star</i><i class="material-icons">star</i><i class="material-icons">star</i><i class="material-icons">star_border</i></span></dd>
+          <p>Love Potion is a heavy sativa strain that is great for patients with depression, pain, and fatigue, due to its euphoric uplifting effects that provide feelings of happiness. </p>
           <dl>
-
             <dt>Weight Options (Grams)</dt>
             <dd><span>1</span>  •  <span>3.5</span>  •  <span>7</span>  •  <span>14</span>  •  <span>28</span></dd>
-
-            <dt>Rating</dt>
-            <dd>4.0 <span><i class="material-icons">star</i><i class="material-icons">star</i><i class="material-icons">star</i><i class="material-icons">star</i><i class="material-icons">star_border</i></span></dd>
           </dl>
           <div>
-            <span>$45.00</span>
-            <button type="button"><i class="material-icons">favorite_border</i></button>
+            <span class = "price">$12.00/g</span>
+
           </div>
-          <div><a href="#">see more</a></div>
+          <div class = "btn"><a href="#">See More</a></div>
         </article>
         </li>
 
@@ -157,20 +114,17 @@
         <article>
           <div><img class = "photo" src="img/bluecookies.jpeg" alt="Product Image"></div>
           <h3>blue cookies</h3>
-          <p>Here is a short of this product that might entice a user to click and add it to their cart.</p>
+          <dd><span><i class="material-icons">star</i><i class="material-icons">star</i><i class="material-icons">star</i><i class="material-icons">star</i><i class="material-icons">star_half</i></span></dd>
+          <p>Blue cookies is an indica dominant strain. It is a cross between GSC and Blueberry and delivers a heavy rush of euphoria, great for depression or chronic pain, due to the relaxing effects.</p>
           <dl>
-
             <dt>Weight Options (Grams)</dt>
             <dd><span>1</span>  •  <span>3.5</span>  •  <span>7</span>  •  <span>14</span>  •  <span>28</span></dd>
-
-            <dt>Rating</dt>
-            <dd>4.4 <span><i class="material-icons">star</i><i class="material-icons">star</i><i class="material-icons">star</i><i class="material-icons">star</i><i class="material-icons">star_half</i></span></dd>
           </dl>
           <div>
-            <span><del>$14.99/g</del> <ins>$11.00/g</ins></span>
-            <button type="button"><i class="material-icons">favorite</i></button>
+            <span class = "price"><del>$14.99/g</del> <ins>$11.00/g</ins></span>
+
           </div>
-          <div><a href="#">see more</a></div>
+          <div class = "btn"><a href="#">See More</a></div>
         </article>
         </li>
 
@@ -179,20 +133,17 @@
         <article>
           <div><img class = "photo" src="img/blackdream.jpeg" alt="Product Image"></div>
           <h3>black dream</h3>
-          <p>Here is a short of this product that might entice a user to click and add it to their cart.</p>
+          <dd><span><i class="material-icons">star</i><i class="material-icons">star</i><i class="material-icons">star</i><i class="material-icons">star</i><i class="material-icons">star_half</i></span></dd>
+          <p>This cross between Black Domina and Super Silver Haze provides a good balance of energetic and relaxed, perfect for the daytime. This strain is highly recommended for those suffering anxiety.</p>
           <dl>
-
             <dt>Weight Options (Grams)</dt>
             <dd><span>1</span>  •  <span>3.5</span>  •  <span>7</span>  •  <span>14</span>  •  <span>28</span></dd>
-
-            <dt>Rating</dt>
-            <dd>4.4 <span><i class="material-icons">star</i><i class="material-icons">star</i><i class="material-icons">star</i><i class="material-icons">star</i><i class="material-icons">star_half</i></span></dd>
           </dl>
           <div>
-            <span><del>$50.00</del> <ins>$39.00</ins></span>
-            <button type="button"><i class="material-icons">favorite</i></button>
+            <span class = "price"><del>$10.00/g</del> <ins>$8.99/g</ins></span>
+
           </div>
-          <div><a href="#">see more</a></div>
+          <div class = "btn"><a href="#">See More</a></div>
         </article>
         </li>
 
@@ -201,20 +152,17 @@
         <article>
           <div><img class = "photo" src="img/brucebanner.jpeg" alt="Product Image"></div>
           <h3>bruce banner</h3>
-          <p>Here is a short of this product that might entice a user to click and add it to their cart.</p>
+          <dd><span><i class="material-icons">star</i><i class="material-icons">star</i><i class="material-icons">star</i><i class="material-icons">star</i><i class="material-icons">star_half</i></span></dd>
+          <p>A cross between OG Kush and Strawberry Diesel, this well balanced hybrid is sure to provide patients with a relaxing high while still being functional for the day.</p>
           <dl>
-
             <dt>Weight Options (Grams)</dt>
             <dd><span>1</span>  •  <span>3.5</span>  •  <span>7</span>  •  <span>14</span>  •  <span>28</span></dd>
-
-            <dt>Rating</dt>
-            <dd>4.4 <span><i class="material-icons">star</i><i class="material-icons">star</i><i class="material-icons">star</i><i class="material-icons">star</i><i class="material-icons">star_half</i></span></dd>
           </dl>
           <div>
-            <span><del>$50.00</del> <ins>$39.00</ins></span>
-            <button type="button"><i class="material-icons">favorite</i></button>
+            <span class = "price"><del>$11.99/g</del> <ins>$10.00/g</ins></span>
+
           </div>
-          <div><a href="#">see more</a></div>
+          <div class = "btn"><a href="#">See More</a></div>
         </article>
         </li>
 
@@ -223,20 +171,21 @@
         <article>
           <div><img class = "photo" src="img/tropaya.jpeg" alt="Product Image"></div>
           <h3>tropaya</h3>
-          <p>This cross between Tropicana Cookies and Papaya is a heavy indica that will provide heavy relaxation, ideal for chronic pain or anxiety.</p>
+          <dd><span><i class="material-icons">star</i><i class="material-icons">star</i><i class="material-icons">star</i><i class="material-icons">star</i><i class="material-icons">star_half</i></span></dd>
+          <p>This cross between Tropicana Cookies and Papaya is a heavy indica that will provide heavy relaxation, ideal for chronic pain or anxiety, but best used at night time.</p>
           <dl>
 
             <dt>Weight Options (Grams)</dt>
             <dd><span>1</span>  •  <span>3.5</span>  •  <span>7</span>  •  <span>14</span>  •  <span>28</span></dd>
 
-            <dt>Rating</dt>
-            <dd>4.4 <span><i class="material-icons">star</i><i class="material-icons">star</i><i class="material-icons">star</i><i class="material-icons">star</i><i class="material-icons">star_half</i></span></dd>
+
+
           </dl>
           <div>
-            <span><del>$50.00</del> <ins>$39.00</ins></span>
-            <button type="button"><i class="material-icons">favorite</i></button>
+            <span class = "price"><del>$11.00/g</del> <ins>$8.49/g</ins></span>
+
           </div>
-          <div><a href="#">see more</a></div>
+          <div class = "btn"><a href="#">See More</a></div>
         </article>
         </li>
       </ul>
