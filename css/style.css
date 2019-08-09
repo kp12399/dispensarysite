@@ -236,7 +236,7 @@ display: none;
  }
    }
 
-   .cartbtn{
+   .cartbtn a{
      background-color: #277C41;
      color: white;
      padding: 14px 25px;
